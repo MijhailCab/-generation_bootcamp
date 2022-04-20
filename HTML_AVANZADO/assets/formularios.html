@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  
+    <link rel="stylesheet" href="formularios.css">
+    <title>Formularios</title>
+
+</head>
+<body>
+    <form action=""method="post">
+        <input type="text" placeholder="Nombre" size="10">
+        <input type="text" placeholder="Apellido" size="20">
+        <input type="text" min="1" max="10">
+        <input type="text" minlength="10" maxlength="25">
+        <input type="date">
+        <input type="mounth">
+        <input type="week">
+        <input type="datetime-local">
+        <input type="time">
+        <input type="password">
+        <input type="file">
+        <input type="range" min="1" max="10">
+        <input type="checkbox" value="Apagado" checked>
+        <input type="radio" name="n1" value="1">
+        <input type="radio" name="n2" value="2">
+        <input type="email" >
+        <select name="Menu" id="">
+            <option>Uno</option>
+            <option value="1">Dos</option>
+            <option value="2" selected>tres</option>
+
+        </select>
+        <textarea name="" id="" cols="30" rows="10"></textarea>
+        <input type="Color" id="InputColor" value="#ff0000">
+        <input type="reset" value="Limpiar">
+        <input type="submit" value="Mandar">
+
+
+    </form>
+    <script>
+        const color = document.querySelector("#inputColor")
+        console.log(color)
+
+        color.addEventListener("change", function (e) {
+            document.body.style.backgroundColor = e.target.value;
+        })
+    </script>
+
+    <hr>Formularios</h1>
+    <form class="Formulario">
+        <div class="nombre">
+            <label for="nombre">Nombre</label>
+            <input type="colorfondo" name="name" id="nombre" placeholder="Nombre">
+
+        </div>
+
+        <div class="apellido"></div>
+        <label for="nombre">Nombre</label>
+            <input type="colorfondo" name="name" id="nombre" placeholder="Nombre">
+        
+        <div class="password"></div>
+        <label for="password">Contraseña</label>
+            <input type="colorfondo" name="password" id="password" placeholder="Nombre">
+
+
+
+    </form>
+</body>
+</html>
