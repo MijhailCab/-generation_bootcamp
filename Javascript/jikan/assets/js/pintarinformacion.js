@@ -1,3 +1,13 @@
+
+// REPASAR
+// REPASAR
+// REPASAR
+// REPASAR
+// REPASAR
+// REPASAR
+// REPASAR
+
+
 const id = window.location.href.split('=').pop();
 console.log(id);
 const $imagenPortada = document.getElementById('imagenPortada');
