@@ -16,6 +16,7 @@ public class TipoPlanta extends Pokemon{
 	
 	public int getNumeroHojas() {
 		return numeroHojas;
+		
 	}
 
 	public void setNumeroHojas(int numeroHojas) {
@@ -24,11 +25,24 @@ public class TipoPlanta extends Pokemon{
 
 	//metodos
 	public void paralizar() {
-		System.out.println("Paraliza");
+		System.out.println(getNombre() + " Paraliza");
 	}
 	
 	public void envenenar() {
-		System.out.println("Envenena");
+		System.out.println(getNombre() + " Envenena");
+	}
+	
+	@Override
+	public void atacar() {
+		System.out.println(nombre + " tipo planta esta atacando");
+		
+	}
+	
+
+	@Override
+	public void saludar() {
+		// TODO Auto-generated method stub
+		
 	}
 
 }

@@ -1,6 +1,6 @@
 package com.pokemon;
 
-public class Pokemon {
+public abstract class Pokemon {
 	
 	//atributos
 	int id;
@@ -20,15 +20,19 @@ public class Pokemon {
 	}
 	//metodos
 	public void comer() {
-		System.out.println(nombre + "Estoy comiendo");
+		System.out.println(nombre + " Estoy comiendo");
 	}
 	public void atacar() {
-		System.out.println(nombre + "Estoy atacando");
+		System.out.println(nombre + " Estoy atacando");
 	}
 	public void dormir() {
-		System.out.println("zzzzzZZZZZZZ");
+		System.out.println(" zzzzzZZZZZZZ");
 		
 	}
+	
+	//metodo abstracto
+	public abstract void saludar();
+	
 	
 	//getters & setters
 	public int getId() {
